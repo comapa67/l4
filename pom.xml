@@ -1,0 +1,10 @@
+<project>
+    <modelVersion>1.0.0</modelVersion>
+    <groupId>bionat.phpci.net</groupId>
+    <artifactId>l4</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <build>
+        <finalName>${project.groupId}-${project.artifactId}</finalName>
+    </build>
+</project>
