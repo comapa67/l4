@@ -1,6 +1,6 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>bionat.phpci.net</groupId>
+    <groupId>bionat</groupId>
     <artifactId>l4</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
