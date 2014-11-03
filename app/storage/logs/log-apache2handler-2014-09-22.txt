@@ -1,0 +1,15 @@
+[2014-09-22 15:37:33] local.ERROR: 500 - file_put_contents(/var/www/html/l4/app/storage/sessions/f2ede93be47f3d825f52a641407cd8431b4dec39): failed to open stream: Permission denied @ /
+exception 'ErrorException' with message 'file_put_contents(/var/www/html/l4/app/storage/sessions/f2ede93be47f3d825f52a641407cd8431b4dec39): failed to open stream: Permission denied' in /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:69
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'file_put_conten...', '/var/www/html/l...', 69, Array)
+#1 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(69): file_put_contents('/var/www/html/l...', 'a:3:{s:6:"_toke...')
+#2 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Session/FileSessionHandler.php(71): Illuminate\Filesystem\Filesystem->put('/var/www/html/l...', 'a:3:{s:6:"_toke...')
+#3 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Session/Store.php(236): Illuminate\Session\FileSessionHandler->write('f2ede93be47f3d8...', 'a:3:{s:6:"_toke...')
+#4 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(126): Illuminate\Session\Store->save()
+#5 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(79): Illuminate\Session\Middleware->closeSession(Object(Illuminate\Session\Store))
+#6 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 /var/www/html/l4/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 /var/www/html/l4/public/index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []

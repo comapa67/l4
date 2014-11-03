@@ -1,0 +1,115 @@
+[2014-09-23 07:31:49] local.ERROR: 404 - Exception @ /login
+exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:911
+Stack trace:
+#0 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(208): Illuminate\Foundation\Application->abort(404)
+#1 /var/www/html/l4/app/controllers/BlogController.php(63): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /var/www/html/l4/app/controllers/BlogController.php(63): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('login')
+#4 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(231): call_user_func_array(Array, Array)
+#5 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getView', Array)
+#6 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(BlogController), Object(Illuminate\Routing\Route), 'getView')
+#7 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'BlogController', 'getView')
+#8 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('login')
+#9 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Routing/Route.php(109): call_user_func_array(Object(Closure), Array)
+#10 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Routing/Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#12 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Session/Middleware.php(72): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#15 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Cookie/Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Cookie/Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 /var/www/html/l4/vendor/stack/builder/src/Stack/StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 /var/www/html/l4/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 /var/www/html/l4/public/index.php(49): Illuminate\Foundation\Application->run()
+#20 /var/www/html/l4/server.php(19): require_once('/var/www/html/l...')
+#21 {main} [] []
+[2014-09-23 13:41:18] local.ERROR: 500 - syntax error, unexpected 'utente' (T_STRING), expecting ')' @ /admin/users/2/edit
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'utente' (T_STRING), expecting ')'' in /var/www/html/l4/app/lang/it/admin/users/messages.php:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 13:41:50] local.ERROR: 500 - syntax error, unexpected 'utente' (T_STRING), expecting ')' @ /admin/users/2/edit
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'utente' (T_STRING), expecting ')'' in /var/www/html/l4/app/lang/it/admin/users/messages.php:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:02:26] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:04:38] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:04:41] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:09:45] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:12:39] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:12:46] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:20:33] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:93
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:21:18] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:93
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:34:30] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:36:04] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:36:08] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:37:09] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:37:26] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:39:12] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:39:32] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:91
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-23 14:41:10] local.ERROR: 500 - syntax error, unexpected '$' @ /admin
+exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '$'' in /var/www/html/l4/app/storage/views/d69ab87a2cd832f358443b13684690e8:92
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
